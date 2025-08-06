@@ -18,7 +18,7 @@
         }
 
         .header {
-            background: linear-gradient(135deg, #1a4a2e, #2d5a3d);
+            background: linear-gradient(135deg, #1e3a8a, #2563eb);
             color: white;
             padding: 1rem 0;
             position: sticky;
@@ -41,6 +41,18 @@
             font-size: 1.8rem;
             font-weight: bold;
             margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-image {
+            width: 100px;
+            height: 80px;
+            object-fit: contain;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.1);
+            padding: 5px;
         }
 
         .contact-info {
@@ -50,7 +62,7 @@
         .phone {
             font-size: 1.4rem;
             font-weight: bold;
-            color: #f39c12;
+            color: #fbbf24;
             text-decoration: none;
             display: inline-block;
             padding: 12px 25px;
@@ -58,13 +70,13 @@
             border-radius: 30px;
             margin-bottom: 0.5rem;
             transition: all 0.3s ease;
-            border: 2px solid rgba(243,156,18,0.3);
+            border: 2px solid rgba(251,191,36,0.3);
         }
 
         .phone:hover {
-            background: rgba(243,156,18,0.2);
+            background: rgba(251,191,36,0.2);
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(243,156,18,0.3);
+            box-shadow: 0 5px 15px rgba(251,191,36,0.3);
         }
 
         .hours {
@@ -73,7 +85,7 @@
         }
 
         .hero {
-            background: linear-gradient(135deg, rgba(26,74,46,0.9), rgba(45,90,61,0.9)), 
+            background: linear-gradient(135deg, rgba(30,58,138,0.9), rgba(37,99,235,0.9)), 
                         url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600"><rect fill="%23333" width="1000" height="600"/><circle fill="%23444" cx="200" cy="150" r="80"/><circle fill="%23444" cx="500" cy="200" r="60"/><circle fill="%23444" cx="800" cy="120" r="70"/><rect fill="%23555" x="100" y="400" width="800" height="150" rx="20"/></svg>');
             background-size: cover;
             background-position: center;
@@ -90,7 +102,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(45deg, rgba(243,156,18,0.1), rgba(26,74,46,0.1));
+            background: linear-gradient(45deg, rgba(251,191,36,0.1), rgba(30,58,138,0.1));
             pointer-events: none;
         }
 
@@ -103,7 +115,7 @@
             font-size: 3.2rem;
             margin-bottom: 1rem;
             text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
-            color: #f4d03f;
+            color: #fef3c7;
         }
 
         .hero p {
@@ -137,25 +149,27 @@
         }
 
         .btn-primary {
-            background: linear-gradient(45deg, #f39c12, #f1c40f);
-            color: white;
-            box-shadow: 0 4px 15px rgba(243,156,18,0.4);
+            background: linear-gradient(45deg, #fbbf24, #f59e0b);
+            color: #1e3a8a;
+            box-shadow: 0 4px 15px rgba(251,191,36,0.4);
+            font-weight: bold;
         }
 
         .btn-secondary {
             background: transparent;
             color: white;
-            border: 2px solid #f39c12;
+            border: 2px solid #fbbf24;
         }
 
         .btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 12px 30px rgba(243,156,18,0.4);
+            box-shadow: 0 12px 30px rgba(251,191,36,0.4);
         }
 
         .btn-secondary:hover {
-            background: #f39c12;
-            color: white;
+            background: #fbbf24;
+            color: #1e3a8a;
+            font-weight: bold;
         }
 
         .services {
@@ -172,7 +186,7 @@
             text-align: center;
             font-size: 2.8rem;
             margin-bottom: 3rem;
-            color: #1a4a2e;
+            color: #1e3a8a;
             position: relative;
         }
 
@@ -184,7 +198,7 @@
             transform: translateX(-50%);
             width: 80px;
             height: 4px;
-            background: linear-gradient(45deg, #f39c12, #f4d03f);
+            background: linear-gradient(45deg, #fbbf24, #f59e0b);
             border-radius: 2px;
         }
 
@@ -195,7 +209,7 @@
 
         .newsletter .section-title::after,
         .reservation-section .section-title::after {
-            background: linear-gradient(45deg, #f4d03f, #f9e79f);
+            background: linear-gradient(45deg, #fef3c7, #fbbf24);
         }
 
         .services-grid {
@@ -211,12 +225,13 @@
             box-shadow: 0 8px 25px rgba(0,0,0,0.1);
             text-align: center;
             transition: all 0.3s ease;
-            border-top: 4px solid #f39c12;
+            border-top: 4px solid #fbbf24;
         }
 
         .service-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(243,156,18,0.2);
+            box-shadow: 0 15px 40px rgba(30,58,138,0.2);
+            border-top: 4px solid #1e3a8a;
         }
 
         .service-icon {
@@ -226,7 +241,7 @@
         }
 
         .service-card h3 {
-            color: #1a4a2e;
+            color: #1e3a8a;
             margin-bottom: 15px;
             font-size: 1.4rem;
         }
@@ -237,7 +252,7 @@
         }
 
         .reservation-section {
-            background: linear-gradient(135deg, #1a4a2e, #2d5a3d);
+            background: linear-gradient(135deg, #1e3a8a, #2563eb);
             color: white;
             padding: 100px 20px;
             text-align: center;
@@ -275,6 +290,7 @@
             font-size: 1rem;
             background: rgba(255,255,255,0.9);
             transition: all 0.3s ease;
+            border: 2px solid transparent;
         }
 
         .form-group input:focus,
@@ -282,8 +298,9 @@
         .form-group textarea:focus {
             outline: none;
             background: white;
+            border: 2px solid #fbbf24;
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(251,191,36,0.3);
         }
 
         .gallery {
@@ -305,11 +322,13 @@
             transition: all 0.3s ease;
             cursor: pointer;
             position: relative;
+            border: 3px solid transparent;
         }
 
         .gallery-item:hover {
             transform: scale(1.05) rotate(1deg);
-            box-shadow: 0 15px 40px rgba(243,156,18,0.2);
+            box-shadow: 0 15px 40px rgba(30,58,138,0.2);
+            border: 3px solid #fbbf24;
         }
 
         .gallery-item img {
@@ -341,23 +360,24 @@
             border-radius: 20px;
             box-shadow: 0 8px 25px rgba(0,0,0,0.1);
             transition: all 0.3s ease;
-            border-left: 4px solid #f39c12;
+            border-left: 4px solid #fbbf24;
+            border-bottom: 2px solid #1e3a8a;
         }
 
         .review-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(243,156,18,0.1);
+            box-shadow: 0 15px 40px rgba(30,58,138,0.2);
         }
 
         .stars {
-            color: #f39c12;
+            color: #fbbf24;
             font-size: 1.3rem;
             margin-bottom: 15px;
         }
 
         .reviewer {
             font-weight: bold;
-            color: #1a4a2e;
+            color: #1e3a8a;
             margin-top: 20px;
             font-size: 1.1rem;
         }
@@ -375,7 +395,7 @@
 
         .newsletter {
             padding: 100px 20px;
-            background: linear-gradient(135deg, #1a4a2e, #2d5a3d);
+            background: linear-gradient(135deg, #1e3a8a, #2563eb);
             color: white;
         }
 
@@ -391,7 +411,7 @@
         .newsletter-text h3 {
             font-size: 2rem;
             margin-bottom: 1.5rem;
-            color: #f4d03f;
+            color: #fef3c7;
         }
 
         .newsletter-text p {
@@ -431,7 +451,9 @@
             padding: 18px 35px;
             white-space: nowrap;
             border-radius: 50px;
-            background: linear-gradient(45deg, #f39c12, #f1c40f);
+            background: linear-gradient(45deg, #fbbf24, #f59e0b);
+            color: #1e3a8a;
+            font-weight: bold;
         }
 
         .location {
@@ -447,7 +469,7 @@
         }
 
         .location-info h3 {
-            color: #1a4a2e;
+            color: #1e3a8a;
             font-size: 1.8rem;
             margin-bottom: 25px;
         }
@@ -459,27 +481,29 @@
         }
 
         .location-info strong {
-            color: #1a4a2e;
+            color: #1e3a8a;
         }
 
         .location-info a {
-            color: #f39c12;
+            color: #1e3a8a;
             text-decoration: none;
             font-weight: bold;
         }
 
         .location-info a:hover {
+            color: #fbbf24;
             text-decoration: underline;
         }
 
         .map-container {
             border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            box-shadow: 0 15px 40px rgba(30,58,138,0.15);
+            border: 3px solid #fbbf24;
         }
 
         .footer {
-            background: linear-gradient(135deg, #2d5a3d, #1a4a2e);
+            background: linear-gradient(135deg, #2563eb, #1e3a8a);
             color: white;
             padding: 50px 20px;
             text-align: center;
@@ -487,6 +511,24 @@
 
         .hidden {
             display: none;
+        }
+
+        /* Directions button with improved contrast */
+        .directions-btn {
+            background: #fbbf24 !important;
+            color: #1e3a8a !important;
+            border: 3px solid #1e3a8a !important;
+            font-weight: bold !important;
+            text-shadow: none !important;
+            box-shadow: 0 4px 15px rgba(30,58,138,0.3) !important;
+        }
+
+        .directions-btn:hover {
+            background: #1e3a8a !important;
+            color: #fbbf24 !important;
+            border: 3px solid #fbbf24 !important;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(251,191,36,0.4) !important;
         }
 
         /* Square Payment Integration Styles */
@@ -499,9 +541,16 @@
         }
 
         .square-payment h4 {
-            color: #f4d03f;
+            color: #fef3c7;
             margin-bottom: 15px;
             font-size: 1.2rem;
+        }
+
+        /* Enhanced hover effects with blue/yellow theme */
+        .btn-primary:hover {
+            background: linear-gradient(45deg, #f59e0b, #eab308) !important;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(251,191,36,0.4);
         }
 
         /* Responsive Design */
@@ -556,6 +605,11 @@
             .section-title {
                 font-size: 2.2rem;
             }
+
+            .logo-image {
+                width: 80px;
+                height: 64px;
+            }
         }
     </style>
 </head>
@@ -563,7 +617,10 @@
     <header class="header">
         <div class="header-content">
             <div>
-                <div class="logo">Aldana's Auto Repair</div>
+                <div class="logo">
+                    <img src="https://raw.githubusercontent.com/JamesBrownR/ALDANA-S-AUTO-REPAIR/main/aldanaautovalentin.jpeg" alt="Aldana's Auto Repair Logo" class="logo-image" onerror="this.style.display='none'">
+                    <span>Aldana's Auto Repair</span>
+                </div>
                 <div>Professional Auto Service Since 2010</div>
             </div>
             <div class="contact-info">
@@ -680,16 +737,13 @@
                     <button type="submit" class="btn btn-primary" style="width: 100%;">Schedule Service</button>
                 </form>
                 
-                <!-- Square Payment Integration Area -->
                 <div class="square-payment">
                     <h4>Secure Payment Options Available</h4>
                     <p style="font-size: 0.9rem; opacity: 0.8;">We accept all major credit cards and digital payments for your convenience.</p>
-                    <!-- Replace YOUR_LOCATION_ID with actual Square location ID -->
-                    <div id="square-payment-form" data-location-id="YOUR_LOCATION_ID"></div>
                 </div>
                 
                 <p style="margin-top: 25px; font-size: 0.9rem; opacity: 0.8;">
-                    Prefer to call? <a href="tel:14052153618" style="color: #f4d03f;">Call (405) 215-3618</a> to speak with us directly.
+                    Prefer to call? <a href="tel:14052153618" style="color: #fef3c7;">Call (405) 215-3618</a> to speak with us directly.
                 </p>
             </div>
         </div>
@@ -733,6 +787,16 @@
             <div class="reviews-grid">
                 <div class="review-card">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>Damn good cats</p>
+                    <div class="reviewer">- Jerry Jones</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>Yay</p>
+                    <div class="reviewer">- DARK MOON</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
                     <p>Bought a car from the family and they made sure everything was fixed and gave great service</p>
                     <div class="reviewer">- Derrick Baker</div>
                 </div>
@@ -748,18 +812,8 @@
                 </div>
                 <div class="review-card">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>Great mechanic team,</p>
+                    <p>Great mechanic team</p>
                     <div class="reviewer">- Carlos G</div>
-                </div>
-                <div class="review-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>Damn good cats</p>
-                    <div class="reviewer">- Jerry Jones</div>
-                </div>
-                <div class="review-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>Yay</p>
-                    <div class="reviewer">- DARK MOON</div>
                 </div>
 
                 <!-- Hidden reviews -->
@@ -807,96 +861,6 @@
                     <div class="stars">⭐⭐⭐⭐⭐</div>
                     <p>Responsibility, kindness and very good work</p>
                     <div class="reviewer">- Edgardo Lambour</div>
-                </div>
-                <div class="review-card hidden review-more">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p></p>
-                    <div class="reviewer">- Juan Chocha Prieta</div>
-                </div>
-                <div class="review-card hidden review-more">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p></p>
-                    <div class="reviewer">- Otoniel Aldana</div>
-                </div>
-                <div class="review-card hidden review-more">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p></p>
-                    <div class="reviewer">- papi tony</div>
-                </div>
-                <div class="review-card hidden review-more">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p></p>
-                    <div class="reviewer">- Laurinda Batres</div>
-                </div>
-                <div class="review-card hidden review-more">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p></p>
-                    <div class="reviewer">- Josiah Harrell</div>
-                </div>
-                <div class="review-card hidden review-more">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p></p>
-                    <div class="reviewer">- Elvin Enrique</div>
-                </div>
-                <div class="review-card hidden review-more">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p></p>
-                    <div class="reviewer">- Diego Rodriguez torres</div>
-                </div>
-                <div class="review-card hidden review-more">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p></p>
-                    <div class="reviewer">- Gris</div>
-                </div>
-                <div class="review-card hidden review-more">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p></p>
-                    <div class="reviewer">- James Powers</div>
-                </div>
-                <div class="review-card hidden review-more">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p></p>
-                    <div class="reviewer">- Berenice A.</div>
-                </div>
-                <div class="review-card hidden review-more">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p></p>
-                    <div class="reviewer">- Luis Mendez</div>
-                </div>
-                <div class="review-card hidden review-more">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p></p>
-                    <div class="reviewer">- James Riediger</div>
-                </div>
-                <div class="review-card hidden review-more">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p></p>
-                    <div class="reviewer">- derly benavides ramirez</div>
-                </div>
-                <div class="review-card hidden review-more">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p></p>
-                    <div class="reviewer">- Adriana Benavides</div>
-                </div>
-                <div class="review-card hidden review-more">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p></p>
-                    <div class="reviewer">- Salvador Serrano</div>
-                </div>
-                <div class="review-card hidden review-more">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p></p>
-                    <div class="reviewer">- Alejandro Ortiz</div>
-                </div>
-                <div class="review-card hidden review-more">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p></p>
-                    <div class="reviewer">- Fernando Casas</div>
-                </div>
-                <div class="review-card hidden review-more">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p></p>
-                    <div class="reviewer">- Claudia Rendon</div>
                 </div>
             </div>
             <div class="show-more">
@@ -946,7 +910,7 @@
                     Sunday: Closed</p>
                     
                     <div style="margin-top: 30px;">
-                        <a href="https://www.google.com/maps/place/ALDANA'S+AUTO+REPAIR/@35.3908,-97.5263,17z" target="_blank" class="btn btn-primary">Get Directions</a>
+                        <a href="https://www.google.com/maps/place/ALDANA'S+AUTO+REPAIR/@35.3908,-97.5263,17z" target="_blank" class="btn directions-btn">Get Directions</a>
                     </div>
                 </div>
                 <div class="map-container">
@@ -1082,11 +1046,6 @@ Please contact me to confirm this appointment and provide an estimate.`
                 submitBtn.disabled = false;
             }, 3000);
         });
-
-        // Square Payment Integration
-        // Replace YOUR_LOCATION_ID with your actual Square location ID
-        // This is where you would initialize Square payment form
-        // Example: Square.payments(SQUARE_APPLICATION_ID).payments(SQUARE_LOCATION_ID);
     </script>
 
     <!-- Google Analytics (replace with your tracking ID) -->
