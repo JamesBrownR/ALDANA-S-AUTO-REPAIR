@@ -625,6 +625,19 @@
                 grid-template-columns: 1fr;
             }
 
+            /* Mobile-specific styles for location section */
+            .location-content .location-info {
+                text-align: center;
+            }
+
+            .location-content .location-info h3 {
+                text-align: center;
+            }
+
+            .location-content .location-info div {
+                text-align: center;
+            }
+
             .phone {
                 font-size: 1.2rem;
             }
@@ -637,17 +650,22 @@
                 font-size: 2.2rem;
             }
 
+            /* Mobile-specific logo and header styles */
             .logo-image {
-                width: 120px;
-                height: 96px;
+                width: 100px;
+                height: 80px;
             }
 
             .company-name {
-                font-size: 1.5rem;
+                font-size: 1.3rem;
             }
 
             .tagline {
-                font-size: 0.8rem;
+                font-size: 0.75rem;
+            }
+
+            .logo {
+                gap: 15px;
             }
         }
     </style>
@@ -808,292 +826,4 @@
                     <img src="https://raw.githubusercontent.com/JamesBrownR/ALDANA-S-AUTO-REPAIR/main/aldana5.png" alt="Quality Service" onerror="this.src='https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://raw.githubusercontent.com/JamesBrownR/ALDANA-S-AUTO-REPAIR/main/aldana6.png" alt="Expert Team" onerror="this.src='https://images.unsplash.com/photo-1593526492054-c57b632bed22?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
-                </div>
-                <div class="gallery-item hidden" id="gallery7">
-                    <img src="https://raw.githubusercontent.com/JamesBrownR/ALDANA-S-AUTO-REPAIR/main/aldana7.png" alt="Professional Workshop" onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
-                </div>
-            </div>
-            <div class="show-more">
-                <button class="btn btn-primary" onclick="showMoreGallery()">Show More Photos</button>
-            </div>
-        </div>
-    </section>
-
-    <section class="reviews">
-        <div class="container">
-            <h2 class="section-title">What Our Customers Say</h2>
-            <div class="reviews-grid">
-                <div class="review-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>Damn good cats</p>
-                    <div class="reviewer">- Jerry Jones</div>
-                </div>
-                <div class="review-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>Yay</p>
-                    <div class="reviewer">- DARK MOON</div>
-                </div>
-                <div class="review-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>Bought a car from the family and they made sure everything was fixed and gave great service</p>
-                    <div class="reviewer">- Derrick Baker</div>
-                </div>
-                <div class="review-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>Good, Hugo is very dependable and honest...</p>
-                    <div class="reviewer">- MIKE TURNER</div>
-                </div>
-                <div class="review-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>My dad the owner</p>
-                    <div class="reviewer">- jeferson Valdez</div>
-                </div>
-                <div class="review-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>Great mechanic team</p>
-                    <div class="reviewer">- Carlos G</div>
-                </div>
-
-                <!-- Hidden reviews -->
-                <div class="review-card hidden review-more">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>Excellent service with speed and quality in the work</p>
-                    <div class="reviewer">- Víctor Ugarriza</div>
-                </div>
-                <div class="review-card hidden review-more">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>Awesome service, I recommend them. They treated me like family.</p>
-                    <div class="reviewer">- Ervin Valdez</div>
-                </div>
-                <div class="review-card hidden review-more">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>Very professional, highly recommended work, thank you for the good work you did for me 👍👍👍</p>
-                    <div class="reviewer">- Edwin Suarez</div>
-                </div>
-                <div class="review-card hidden review-more">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>The truth is, perfect attention and very fast with good and honest work.</p>
-                    <div class="reviewer">- Humberto Barrera</div>
-                </div>
-                <div class="review-card hidden review-more">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>The mechanic boys are responsible in their work and reliable, but above all polite.</p>
-                    <div class="reviewer">- Teo GP</div>
-                </div>
-                <div class="review-card hidden review-more">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>Very good service and attention</p>
-                    <div class="reviewer">- Alfredo Hechavarría</div>
-                </div>
-                <div class="review-card hidden review-more">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>An excellent mechanic, very honest and responsible. I recommend it!</p>
-                    <div class="reviewer">- Jeral A.</div>
-                </div>
-                <div class="review-card hidden review-more">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>It is an excellent mechanics workshop in general, the owner is honest and punctual.</p>
-                    <div class="reviewer">- Oto Aldana</div>
-                </div>
-                <div class="review-card hidden review-more">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>Responsibility, kindness and very good work</p>
-                    <div class="reviewer">- Edgardo Lambour</div>
-                </div>
-            </div>
-            <div class="show-more">
-                <button class="btn btn-primary" onclick="showMoreReviews()">Show More Reviews</button>
-            </div>
-        </div>
-    </section>
-
-    <section class="newsletter">
-        <div class="container">
-            <h2 class="section-title">Stay Connected</h2>
-            <div class="newsletter-content">
-                <div class="newsletter-text">
-                    <h3>Get Service Updates & Special Offers</h3>
-                    <p>Subscribe to receive maintenance reminders, auto repair specials, and automotive tips. Stay informed about our latest services and promotions.</p>
-                </div>
-                <div class="newsletter-form-container">
-                    <form action="https://gmail.us12.list-manage.com/subscribe/post?u=55b8a8dfdd77086d0dddbf347&amp;id=f0d21f4828&amp;f_id=003f80e3f0" method="post" id="newsletter-form" class="newsletter-form" target="_blank">
-                        <div class="form-group">
-                            <input type="email" name="EMAIL" class="newsletter-input" placeholder="Enter your email address" required>
-                            <button type="submit" class="btn btn-primary newsletter-btn">Subscribe</button>
-                        </div>
-                        <div id="newsletter-response" style="display: none;"></div>
-                        <!-- Honeypot field -->
-                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                            <input type="text" name="b_55b8a8dfdd77086d0dddbf347_f0d21f4828" tabindex="-1" value="">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="location">
-        <div class="container">
-            <h2 class="section-title">Visit Our Shop</h2>
-            <div class="location-content">
-                <div class="location-info">
-                    <h3>Convenient Location</h3>
-                    <p><strong>Address:</strong><br>4818 S Pennsylvania Ave<br>Oklahoma City, OK 73119</p>
-                    
-                    <p><strong>Phone:</strong><br><a href="tel:14052153618">(405) 215-3618</a></p>
-                    
-                    <p><strong>Hours:</strong><br>
-                    Monday - Friday: 8:30 AM - 5:00 PM<br>
-                    Saturday: 10:00 AM - 2:00 PM<br>
-                    Sunday: Closed</p>
-                    
-                    <div style="margin-top: 30px;">
-                        <a href="https://www.google.com/maps/place/ALDANA'S+AUTO+REPAIR/@35.3908,-97.5263,17z" target="_blank" class="btn directions-btn">Get Directions</a>
-                    </div>
-                </div>
-                <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.5!2d-97.5263!3d35.3908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b21a0a0a0a0a0a%3A0x0a0a0a0a0a0a0a0a!2sALDANA'S%20AUTO%20REPAIR!5e0!3m2!1sen!2sus!4v1635789012345!5m2!1sen!2sus" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Aldana's Auto Repair. All rights reserved.</p>
-            <p>Professional auto repair services serving Oklahoma City and surrounding areas.</p>
-        </div>
-    </footer>
-
-    <script>
-        // Form submission handler
-        document.getElementById('appointmentForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Collect form data
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
-            
-            // Create mailto link with appointment details
-            const subject = encodeURIComponent('Service Appointment Request - ' + data.service);
-            const body = encodeURIComponent(
-                `New service appointment request:
-                
-Name: ${data.name}
-Phone: ${data.phone}
-Email: ${data.email}
-Vehicle: ${data.vehicle}
-Service: ${data.service}
-Preferred Date: ${data['preferred-date']}
-Preferred Time: ${data['preferred-time']}
-Additional Details: ${data.message}
-
-Please contact me to confirm this appointment and provide an estimate.`
-            );
-            
-            alert('Thank you for your service request! We will contact you within 24 hours to confirm your appointment and provide an estimate. For immediate assistance, please call (405) 215-3618.');
-            
-            // Send email notification
-            window.location.href = `mailto:service@aldanaautorepair.com?subject=${subject}&body=${body}`;
-            
-            // Reset form
-            this.reset();
-        });
-
-        // Show more reviews functionality
-        function showMoreReviews() {
-            const hiddenReviews = document.querySelectorAll('.review-more');
-            const button = event.target;
-            
-            if (button.textContent === 'Show More Reviews') {
-                hiddenReviews.forEach(review => {
-                    review.classList.remove('hidden');
-                });
-                button.textContent = 'Show Less Reviews';
-            } else {
-                hiddenReviews.forEach(review => {
-                    review.classList.add('hidden');
-                });
-                button.textContent = 'Show More Reviews';
-            }
-        }
-
-        // Show more gallery functionality
-        function showMoreGallery() {
-            const hiddenItems = document.querySelectorAll('#gallery7');
-            const button = event.target;
-            
-            if (button.textContent === 'Show More Photos') {
-                hiddenItems.forEach(item => {
-                    item.classList.remove('hidden');
-                });
-                button.textContent = 'Show Less Photos';
-            } else {
-                hiddenItems.forEach(item => {
-                    item.classList.add('hidden');
-                });
-                button.textContent = 'Show More Photos';
-            }
-        }
-
-        // Smooth scrolling for navigation
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Set minimum date for appointment booking (today)
-        document.addEventListener('DOMContentLoaded', function() {
-            const dateInput = document.getElementById('preferred-date');
-            const today = new Date();
-            const tomorrow = new Date(today);
-            tomorrow.setDate(tomorrow.getDate() + 1);
-            dateInput.min = tomorrow.toISOString().split('T')[0];
-        });
-
-        // Call tracking for mobile users
-        document.querySelectorAll('a[href^="tel:"]').forEach(link => {
-            link.addEventListener('click', function() {
-                // Track phone calls for analytics
-                if (typeof gtag !== 'undefined') {
-                    gtag('event', 'phone_call', {
-                        event_category: 'engagement',
-                        event_label: 'header_phone'
-                    });
-                }
-            });
-        });
-
-        // Add loading state to appointment form
-        document.getElementById('appointmentForm').addEventListener('submit', function() {
-            const submitBtn = this.querySelector('button[type="submit"]');
-            const originalText = submitBtn.textContent;
-            submitBtn.textContent = 'Scheduling...';
-            submitBtn.disabled = true;
-            
-            setTimeout(() => {
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
-            }, 3000);
-        });
-    </script>
-
-    <!-- Google Analytics (replace with your tracking ID) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'GA_TRACKING_ID');
-    </script>
-</body>
-</html>
+                    <img src="https://raw.githubusercontent.com/JamesBrownR/ALDANA-S-AUTO-REPAIR/main/aldana6.png" alt="Expert Team" onerror="this.src='https://images.unsplash.com/photo-1593526492054-c57b632bed22?ixlib=rb-4.0.3&auto=format&fit=
