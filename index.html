@@ -748,7 +748,9 @@
             <h2 class="section-title">Schedule Your Service</h2>
             <div class="reservation-form">
                 <p style="margin-bottom: 30px;">Book your auto repair service appointment. We'll confirm your booking and provide an estimate.</p>
-                <form id="appointmentForm">
+                <form name="appointment" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+<input type="hidden" name="form-name" value="appointment">
+<p class="hidden"><label>Don’t fill this out if you're human: <input name="bot-field"></label></p>
                     <div class="form-group">
                         <label for="name">Full Name</label>
                         <input type="text" id="name" name="name" required>
@@ -989,40 +991,6 @@
     </footer>
 
     <script>
-        // Form submission handler
-        document.getElementById('appointmentForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Collect form data
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
-            
-            // Create mailto link with appointment details
-            const subject = encodeURIComponent('Service Appointment Request - ' + data.service);
-            const body = encodeURIComponent(
-                `New service appointment request:
-                
-Name: ${data.name}
-Phone: ${data.phone}
-Email: ${data.email}
-Vehicle: ${data.vehicle}
-Service: ${data.service}
-Preferred Date: ${data['preferred-date']}
-Preferred Time: ${data['preferred-time']}
-Additional Details: ${data.message}
-
-Please contact me to confirm this appointment and provide an estimate.`
-            );
-            
-            alert('Thank you for your service request! We will contact you within 24 hours to confirm your appointment and provide an estimate. For immediate assistance, please call (405) 215-3618.');
-            
-            // Send email notification
-            window.location.href = `mailto:service@aldanaautorepair.com?subject=${subject}&body=${body}`;
-            
-            // Reset form
-            this.reset();
-        });
-
         // Show more reviews functionality
         function showMoreReviews() {
             const hiddenReviews = document.querySelectorAll('.review-more');
